@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <style>
+    /* Header Section */
+    .header {
+      background-image: url('logo.jpg'); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      height: 300px; /* Adjust height as needed */
+      display: flex;
+      align-items: flex-end; /* Align navbar to the bottom */
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative; /* For positioning the navbar */
+    }
+    .navbar {
+      background-color: rgba(255, 255, 255); /* White background with slight transparency */
+      width: 100%; /* Full width */
+      padding: 10px 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+    .navbar-nav .nav-link {
+      color: #333; /* Dark gray text for links */
+      font-weight: bold;
+      margin: 0 15px; /* Spacing between links */
+      transition: color 0.3s ease;
+    }
+    .navbar-nav .nav-link:hover {
+      color: orange; /* Blue color on hover */
+    }
+    .navbar-toggler {
+      border-color: #333; /* Dark gray border for the toggle button */
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(51, 51, 51, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    /* Programs Section */
+    .programs-section {
+      padding: 80px 0;
+      background-color: #f8f9fa; /* Light background */
+    }
+    .programs-section .sidebar {
+      background-color: #ffffff; /* White background */
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .programs-section .sidebar h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #343a40; /* Dark gray color for headings */
+      margin-bottom: 20px;
+    }
+    .programs-section .sidebar .nav-link {
+      color: #6c757d; /* Gray color for links */
+      font-size: 1rem;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .programs-section .sidebar .nav-link:hover {
+      background-color: orange; /* Orange background on hover */
+      color: white; /* White text on hover */
+    }
+    .programs-section .sidebar .nav-link.active {
+      background-color: orange; /* Orange background for active link */
+      color: white; /* White text for active link */
+    }
+    .programs-section .content {
+      background-color: #ffffff; /* White background */
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .programs-section .content h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #343a40; /* Dark gray color for headings */
+      margin-bottom: 20px;
+    }
+    .programs-section .content img {
+      width: 100%;
+      height: 300px; /* Adjust height as needed */
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .programs-section .content p {
+      font-size: 1rem;
+      color: #6c757d; /* Gray color for text */
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="strategy.html">Implementation Strategy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="programs.html">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ark Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Programs Section -->
+  <section class="programs-section">
+    <div class="container">
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-4">
+          <div class="sidebar">
+            <h3>Our Programmes</h3>
+            <nav class="nav flex-column">
+              <a class="nav-link active" data-target="program1">Strengthening Community Structures for Resilience</a>
+              <a class="nav-link" data-target="program2">Community Managed Sustainable Livelihoods</a>
+              <a class="nav-link" data-target="program3">Community Based Care for Children with Disabilities</a>
+              <a class="nav-link" data-target="program4">Education Sponsorship and Advocacy</a>
+              <a class="nav-link" data-target="program5">Gender and Environment</a>
+            </nav>
+          </div>
+        </div>
+        <!-- Content -->
+        <div class="col-md-8">
+          <div class="content">
+            <!-- Program 1 -->
+            <div id="program1" class="program-content">
+              <h2>Strengthening Community Structures for Resilience</h2>
+              <img src="program1.jpg" alt="Program 1 Image"> <!-- Replace with your image -->
+              <p>
+                This program focuses on building the capacity of community structures to enhance resilience. We work with local leaders and volunteers to develop sustainable solutions that address social, economic, and environmental challenges.
+              </p>
+            </div>
+            <!-- Program 2 -->
+            <div id="program2" class="program-content" style="display: none;">
+              <h2>Community Managed Sustainable Livelihoods</h2>
+              <img src="program2.jpg" alt="Program 2 Image"> <!-- Replace with your image -->
+              <p>
+                Through this program, we empower communities to manage their livelihoods sustainably. We provide training, resources, and support to help them diversify income streams and improve food security.
+              </p>
+            </div>
+            <!-- Program 3 -->
+            <div id="program3" class="program-content" style="display: none;">
+              <h2>Community Based Care for Children with Disabilities</h2>
+              <img src="program3.jpg" alt="Program 3 Image"> <!-- Replace with your image -->
+              <p>
+                This program aims to improve the quality of life for children with disabilities by providing community-based care and support. We work with families and local organizations to ensure inclusive and accessible services.
+              </p>
+            </div>
+            <!-- Program 4 -->
+            <div id="program4" class="program-content" style="display: none;">
+              <h2>Education Sponsorship and Advocacy</h2>
+              <img src="program4.jpg" alt="Program 4 Image"> <!-- Replace with your image -->
+              <p>
+                We sponsor education for vulnerable children and advocate for policies that promote access to quality education. Our goal is to ensure every child has the opportunity to learn and thrive.
+              </p>
+            </div>
+            <!-- Program 5 -->
+            <div id="program5" class="program-content" style="display: none;">
+              <h2>Gender and Environment</h2>
+              <img src="program5.jpg" alt="Program 5 Image"> <!-- Replace with your image -->
+              <p>
+                This program promotes gender equality and environmental sustainability. We empower women and girls to take leadership roles in environmental conservation and climate change adaptation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer style="background-color: #333; color: #fff; padding: 20px 0; text-align: center;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 200px; margin: 10px;">
+          <h3 style="color: #fff;">About Us</h3>
+          <p style="font-size: 14px; color: #ccc;">We are dedicated to providing the best service and products to our customers. Learn more about our mission and values.</p>
+        </div>
+        <div style="flex: 1; min-width: 200px; margin: 10px;">
+          <h3 style="color: #fff;">Quick Links</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li><a href="#" style="color: #ccc; text-decoration: none; font-size: 14px;">Home</a></li>
+            <li><a href="#" style="color: #ccc; text-decoration: none; font-size: 14px;">Services</a></li>
+            <li><a href="#" style="color: #ccc; text-decoration: none; font-size: 14px;">Blog</a></li>
+            <li><a href="#" style="color: #ccc; text-decoration: none; font-size: 14px;">Contact</a></li>
+          </ul>
+        </div>
+        <div style="flex: 1; min-width: 200px; margin: 10px;">
+          <h3 style="color: #fff;">Contact Us</h3>
+          <p style="font-size: 14px; color: #ccc;">Email: info@example.com<br>Phone: +123 456 7890<br>Address: 123 Main St, City, Country</p>
+        </div>
+      </div>
+      <div style="border-top: 1px solid #444; margin-top: 20px; padding-top: 10px;">
+        <p style="font-size: 12px; color: #ccc;">&copy; 2023 Your Company Name. All rights reserved.</p>
+        <div style="margin-top: 10px;">
+          <a href="#" style="color: #ccc; text-decoration: none; margin: 0 10px; font-size: 14px;">Privacy Policy</a>
+          <a href="#" style="color: #ccc; text-decoration: none; margin: 0 10px; font-size: 14px;">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script>
+    // JavaScript to handle sidebar navigation
+    const navLinks = document.querySelectorAll('.sidebar .nav-link');
+    const programContents = document.querySelectorAll('.program-content');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = link.getAttribute('data-target');
+
+        // Remove active class from all links
+        navLinks.forEach(navLink => navLink.classList.remove('active'));
+        // Add active class to the clicked link
+        link.classList.add('active');
+
+        // Hide all program contents
+        programContents.forEach(content => content.style.display = 'none');
+        // Show the selected program content
+        document.getElementById(target).style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>
