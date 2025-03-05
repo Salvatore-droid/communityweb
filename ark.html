@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
+  <title>ARK Partners</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome Icons -->
@@ -45,69 +45,57 @@
       background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(51, 51, 51, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
 
-    /* Contact Section */
-    .contact-section {
+    /* ARK Partners Section */
+    .ark-partners-section {
       padding: 80px 0;
       background: linear-gradient(to right, white, rgb(250, 210, 140));
     }
-    .contact-section h2 {
+    .ark-partners-section h2 {
       font-size: 2.5rem;
       font-weight: bold;
       color: #343a40; /* Dark gray color for headings */
       text-align: center;
       margin-bottom: 50px;
     }
-    .contact-section .contact-info {
+    .ark-partners-section .ark-card {
       background-color: #ffffff; /* White background */
       border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
       margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .contact-section .contact-info h3 {
+    .ark-partners-section .ark-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .ark-partners-section .ark-card img {
+      width: 100%;
+      height: 200px; /* Adjust height as needed */
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .ark-partners-section .ark-card h3 {
       font-size: 1.5rem;
       font-weight: bold;
       color: #343a40; /* Dark gray color for headings */
-      margin-bottom: 20px;
-    }
-    .contact-section .contact-info p {
-      font-size: 1rem;
-      color: #6c757d; /* Gray color for text */
-      line-height: 1.8;
       margin-bottom: 15px;
     }
-    .contact-section .contact-info .icon {
-      font-size: 1.5rem;
-      color: orange; /* Orange color for icons */
-      margin-right: 10px;
-    }
-    .contact-section .feedback-form {
-      background-color: #ffffff; /* White background */
-      border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    .contact-section .feedback-form h3 {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #343a40; /* Dark gray color for headings */
-      margin-bottom: 20px;
-    }
-    .contact-section .feedback-form .form-control {
-      margin-bottom: 20px;
-      border-radius: 5px;
-      border: 1px solid #ddd;
-      padding: 10px;
-    }
-    .contact-section .feedback-form .btn-primary {
-      background-color: orange;
-      border: none;
-      padding: 10px 30px;
+    .ark-partners-section .ark-card p {
       font-size: 1rem;
-      transition: background-color 0.3s ease;
+      color: #6c757d; /* Gray color for text */
+      line-height: 1.6;
     }
-    .contact-section .feedback-form .btn-primary:hover {
-      background-color: darkorange;
+    .ark-partners-section .ark-card ul {
+      list-style-type: disc; /* Bullet points */
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    .ark-partners-section .ark-card ul li {
+      font-size: 1rem;
+      color: #6c757d; /* Gray color for text */
+      line-height: 1.6;
     }
   </style>
 </head>
@@ -132,16 +120,16 @@
               <a class="nav-link" href="strategy.html">Implementation Strategy</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="program.html">Programs</a>
+              <a class="nav-link" href="programs.html">Programs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="ark.html">Ark Partners</a>
+              <a class="nav-link active" href="ark.html">ARK Partners</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="contact.html">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -149,43 +137,90 @@
     </nav>
   </header>
 
-  <!-- Contact Section -->
-  <section class="contact-section">
+  <!-- ARK Partners Section -->
+  <section class="ark-partners-section">
     <div class="container">
-      <h2>Contact Us</h2>
+      <h2>ARK Partners</h2>
       <div class="row">
-        <!-- Contact Information -->
-        <div class="col-md-6">
-          <div class="contact-info">
-            <h3><i class="fas fa-map-marker-alt icon"></i>ADDRESS</h3>
-            <p>Windsor Close, Alozi Estate Rd, Nairobi, Kenya</p>
-            <h3><i class="fas fa-phone-alt icon"></i>CONTACT US</h3>
-            <p>Tel: 0723-960 092, 0721-607198, 0735-288 114</p>
-            <p>P.O. BOX 2340-00202 Nairobi</p>
-            <h3><i class="fas fa-envelope icon"></i>EMAIL</h3>
-            <p>admin@cotrr-africa.org</p>
+        <!-- ARK Overview -->
+        <div class="col-md-12 mb-5">
+          <div class="ark-card">
+            <h3>What is ARK?</h3>
+            <p>
+              ARK is an acronym for <strong>Acts of Random Kindness</strong>. It is a concept that originated from the co-founders of COTRR, who would extend small acts of kindness to the needy around them. With time, these acts amounted to immense contributions to the welfare of those they touched. Realizing the potential in such gestures, the co-founders built on these kind acts to start a legally registered non-profit organization, hence the genesis of COTRR.
+            </p>
+            <p>
+              ARK Partners is an initiative that brings together individuals from all walks of life, all over the world, and gives them a unique opportunity to touch lives among resource-limited families and communities in Kenyan rural areas. Each willing contributor, wherever they are, gives a small donation to support a child, a family, a school, or even a community.
+            </p>
           </div>
         </div>
-        <!-- Feedback Form -->
+
+        <!-- Kenyan ARK Partners -->
         <div class="col-md-6">
-          <div class="feedback-form">
-            <h3>FEEDBACK FORM</h3>
-            <p>Drop us a line as we look forward to hearing from you.</p>
-            <form>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name" required>
+          <div class="ark-card">
+            <h3>Kenyan ARK Partners</h3>
+            <p>
+              Kenyan ARK partners work with COTRR to achieve the following:
+            </p>
+            <ul>
+              <li>Organize community outreach medical camps.</li>
+              <li>Educate orphaned children in primary and secondary schools.</li>
+              <li>Donate desks, books, and other learning materials to public schools in remote areas.</li>
+              <li>Support schools for children with special needs.</li>
+              <li>Support malnourished children with nutritional supplementation.</li>
+              <li>Buy water tanks for needy orphaned households.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- International ARK Partners -->
+        <div class="col-md-6">
+          <div class="ark-card">
+            <h3>International ARK Partners</h3>
+            <p>
+              ARK Partners from other countries who wish to experience rural Kenya are assisted by COTRR to access their preferred areas within COTRR project sites.
+            </p>
+          </div>
+        </div>
+
+        <!-- Join ARK -->
+        <div class="col-md-12 mt-5">
+          <div class="ark-card">
+            <h3>Join ARK Partners</h3>
+            <p>
+              Join this unique network and put a smile on deserving families through any of the following Acts of Random Kindness:
+            </p>
+            <ul>
+              <li>Monthly support for a destitute family @ <strong>$50</strong>.</li>
+              <li>Support for secondary school education for a needy child @ <strong>$650 per year</strong>.</li>
+              <li>Support for a special/disabled child from a poor family @ <strong>$40 per month</strong>.</li>
+              <li>Purchase a water tank for a poor family @ <strong>$300</strong>.</li>
+              <li>Support for implementation of a community project through individual, club, foundation, or organization contributions @ <strong>$5,000 and above</strong>.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ARK Projects -->
+        <div class="col-md-12 mt-5">
+          <div class="ark-card">
+            <h3>ARK Projects</h3>
+            <div class="row">
+              <!-- Project 1 -->
+              <div class="col-md-4">
+                <img src="images/ark3.jpg" alt="ARK Project 1"> <!-- Replace with your image -->
+                <p>Community Outreach Medical Camp</p>
               </div>
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="Your Email" required>
+              <!-- Project 2 -->
+              <div class="col-md-4">
+                <img src="images/ark2.jpg" alt="ARK Project 2"> <!-- Replace with your image -->
+                <p>School Donations</p>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject" required>
+              <!-- Project 3 -->
+              <div class="col-md-4">
+                <img src="images/ark1.jpg" alt="ARK Project 3"> <!-- Replace with your image -->
+                <p>Water Tank Installation</p>
               </div>
-              <div class="form-group">
-                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
